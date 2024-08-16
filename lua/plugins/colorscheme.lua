@@ -40,6 +40,7 @@ return {
     'sainnhe/everforest',
     lazy = false,
     priority = 1000,
+    transparent_background_level = 1,
     config = function()
       -- Optionally configure and load the colorscheme
       -- directly inside the plugin declaration.
