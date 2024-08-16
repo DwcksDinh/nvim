@@ -1,6 +1,6 @@
 return {
-  {
-    "ellisonleao/gruvbox.nvim",
+  -- {
+    -- "ellisonleao/gruvbox.nvim",
     -- opts ={
     --   terminal_colors = true, -- add neovim terminal colors
     --   undercurl = true,
@@ -34,13 +34,25 @@ return {
     --     floats = "transparent",
     --   },
     -- },
+  -- },
+
+  {
+    'sainnhe/everforest',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- Optionally configure and load the colorscheme
+      -- directly inside the plugin declaration.
+      vim.g.everforest_enable_italic = true
+      vim.cmd.colorscheme('everforest')
+      end
   },
-  -- {"shaunsingh/nord.nvim"},
-  -- Configure LazyVim to load gruvbox
+
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "everforest",
     },
   }
 }
