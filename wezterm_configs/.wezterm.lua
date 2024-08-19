@@ -22,7 +22,8 @@ config.window_padding = {
 }
 
 -- Tab bar
-config.use_fancy_tab_bar = true
+config.use_fancy_tab_bar = false
+config.tab_max_width = 16
 config.tab_bar_at_bottom = true
 config.window_frame = {
   border_top_height = 0,
@@ -31,6 +32,7 @@ config.window_frame = {
   font = wezterm.font('Hack Nerd Font'),
   font_size = 11,
 }
+-- config.text_background_opacity = 0.6
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
   -- The filled in variant of the < symbol
   local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
