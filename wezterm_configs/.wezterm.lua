@@ -11,7 +11,62 @@ config.color_scheme = 'Everforest Dark (Gogh)'
 config.font = wezterm.font('Hack Nerd Font', {weight = 700})
 config.font_size = 12
 config.window_decorations = "RESIZE" --"INTEGRATED_BUTTONS|RESIZE"
+config.cursor_blink_ease_out = "Linear"
+
+-- Window
+config.window_padding = {
+  left = 2,
+  right = 2,
+  top = 5,
+  bottom = 0,
+}
+
+-- Tab bar
 config.use_fancy_tab_bar = true
+config.tab_bar_at_bottom = true
+config.window_frame = {
+  border_top_height = 0,
+  border_bottom_height = 0,
+  active_titlebar_bg = "rgba(0 0 0 0)",
+  font = wezterm.font('Hack Nerd Font'),
+  font_size = 11,
+}
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+  -- The filled in variant of the < symbol
+  local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
+
+  -- The filled in variant of the > symbol
+  local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
+  local title = tab.active_pane.title
+  if tab.tab_title and #tab.tab_title > 0 then
+    title = tab.tab_title
+  end
+  if tab.is_active then
+    return {
+      { Background = { Color = "#90c083" } },
+      { Foreground = { Color = "#030b09" } },
+      -- { Text = SOLID_LEFT_ARROW },
+      -- { Background = { Color = "#90c083" } },
+      { Foreground = { Color = "#111b21" } },
+      { Text = (tab.tab_index + 1) .. ": " .. title .. " " },
+      -- { Background = { Color = "#0b0022" } },
+      -- { Foreground = { Color = "#2b2042" } },
+      -- { Text = SOLID_RIGHT_ARROW },
+    }
+  else
+    return {
+      { Background = { Color = "#111b21" } },
+      -- { Foreground = { Color = "#1b1032" } },
+      -- { Text = SOLID_LEFT_ARROW },
+      -- { Background = { Color = "#1b1032" } },
+      { Foreground = { Color = "#a0bb73" } },
+      { Text = (tab.tab_index + 1) .. ": " .. title .. " " },
+      -- { Background = { Color = "#0b0022" } },
+      -- { Foreground = { Color = "#1b1032" } },
+      -- { Text = SOLID_RIGHT_ARROW },
+    }
+  end
+end)
 
 -- This is used to make my foreground (text, etc) brighter than my background
 config.foreground_text_hsb = {
