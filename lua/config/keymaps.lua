@@ -6,9 +6,3 @@ local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
-
--- Di chuyển dòng xuống dưới
-map("n", "<A-j>", ":m+1<CR>==", { desc = "Move line down" })
-
--- Di chuyển dòng lên trên
-map("n", "<A-k>", ":m-2<CR>==", { desc = "Move line up" })
