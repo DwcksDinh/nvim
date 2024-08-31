@@ -31,7 +31,7 @@ return {
     "neanias/everforest-nvim",
     config = function()
       require("everforest").setup({
-       transparent_background_level = 1,
+        transparent_background_level = 1,
         diagnostic_virtual_text = "coloured",
         disable_terminal_colours = true,
         background = "soft",
