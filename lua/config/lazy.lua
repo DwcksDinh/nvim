@@ -14,15 +14,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Uncomment để dùng được debug
--- require("lazy").setup({
---   spec = {
---     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
---     { import = "lazyvim.plugins.extras.dap.core" },
---     { import = "plugins" },
---   },
--- })
-
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
