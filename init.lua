@@ -1,15 +1,16 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.api.nvim_set_option("clipboard","unnamed")
+vim.api.nvim_set_option("clipboard", "unnamed")
 -- Check if 'pwsh' is executable and set the shell accordingly
-if vim.fn.executable('pwsh') == 1 then
-    vim.o.shell = 'pwsh'
+if vim.fn.executable("pwsh") == 1 then
+  vim.o.shell = "pwsh"
 else
-    vim.o.shell = 'powershell'
+  vim.o.shell = "powershell"
 end
 
 -- Setting shell command flags
-vim.o.shellcmdflag = '-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new();$PSDefaultParameterValues[\'Out-File:Encoding\']=\'utf8\';'
+vim.o.shellcmdflag =
+  "-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.UTF8Encoding]::new();$PSDefaultParameterValues['Out-File:Encoding']='utf8';"
 
 -- Setting shell redirection
 vim.o.shellredir = '2>&1 | %{ "$_" } | Out-File %s; exit $LastExitCode'
@@ -18,7 +19,40 @@ vim.o.shellredir = '2>&1 | %{ "$_" } | Out-File %s; exit $LastExitCode'
 vim.o.shellpipe = '2>&1 | %{ "$_" } | Tee-Object %s; exit $LastExitCode'
 
 -- Setting shell quote options
-vim.o.shellquote = ''
-vim.o.shellxquote = ''
+vim.o.shellquote = "điếu thuốc tàn bên ly cà phê cạn"
 
 -- vim.o.shell = 'pwsh'
+
+if vim.g.neovide then
+  -- Specify the font used by Neovide
+  -- vim.o.guifont = "JetBrainsMono Nerd Font"
+  -- This is limited by the refresh rate of your physical hardware, but can be
+  -- lowered to increase battery life
+  -- This setting is only effective when not using vsync,
+  -- for example by passing --no-vsync on the commandline.
+  vim.g.neovide_input_ime = true
+  vim.g.neovide_refresh_rate = 60
+  -- This is how fast the cursor animation "moves", default 0.06
+  vim.g.neovide_cursor_animation_length = 0.04
+  -- Default 0.7
+  vim.g.neovide_cursor_trail_size = 0.7
+
+  vim.g.neovide_floating_blur_amount_x = 2.0
+  vim.g.neovide_floating_blur_amount_y = 2.0
+  -- produce particles behind the cursor, if want to disable them, set it to ""
+  -- vim.g.neovide_cursor_vfx_mode = "railgun"
+  -- vim.g.neovide_cursor_vfx_mode = "torpedo"
+  -- vim.g.neovide_cursor_vfx_mode = "pixiedust"
+  vim.g.neovide_cursor_vfx_mode = "sonicboom"
+  -- vim.g.neovide_cursor_vfx_mode = "ripple"
+  -- vim.g.neovide_cursor_vfx_mode = "wireframe"
+
+  vim.g.neovide_scroll_animation_length = 0
+
+  vim.g.neovide_floating_shadow = true
+  vim.g.neovide_floating_z_height = 10
+  vim.g.neovide_light_angle_degrees = 45
+  vim.g.neovide_light_radius = 5
+  vim.g.neovide_background_color = "#7ea4c2"
+  vim.g.neovide_transparency = 0.8
+end
