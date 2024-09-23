@@ -24,21 +24,15 @@ vim.o.shellquote = "điếu thuốc tàn bên ly cà phê cạn"
 -- vim.o.shell = 'pwsh'
 
 if vim.g.neovide then
-  -- Specify the font used by Neovide
-  -- vim.o.guifont = "JetBrainsMono Nerd Font"
-  -- This is limited by the refresh rate of your physical hardware, but can be
-  -- lowered to increase battery life
-  -- This setting is only effective when not using vsync,
-  -- for example by passing --no-vsync on the commandline.
+  -- set true để gõ tiếng viêt
   vim.g.neovide_input_ime = true
+
   vim.g.neovide_refresh_rate = 60
   -- This is how fast the cursor animation "moves", default 0.06
   vim.g.neovide_cursor_animation_length = 0.04
   -- Default 0.7
   vim.g.neovide_cursor_trail_size = 0.7
 
-  vim.g.neovide_floating_blur_amount_x = 2.0
-  vim.g.neovide_floating_blur_amount_y = 2.0
   -- produce particles behind the cursor, if want to disable them, set it to ""
   -- vim.g.neovide_cursor_vfx_mode = "railgun"
   -- vim.g.neovide_cursor_vfx_mode = "torpedo"
@@ -49,10 +43,16 @@ if vim.g.neovide then
 
   vim.g.neovide_scroll_animation_length = 0
 
-  vim.g.neovide_floating_shadow = true
-  vim.g.neovide_floating_z_height = 10
-  vim.g.neovide_light_angle_degrees = 45
-  vim.g.neovide_light_radius = 5
-  vim.g.neovide_background_color = "#7ea4c2"
   vim.g.neovide_transparency = 0.8
+
+  -- Not support in current version
+  -- vim.g.neovide_floating_blur_amount_x = 2.0
+  -- vim.g.neovide_floating_blur_amount_y = 2.0
+  -- vim.g.neovide_window_blurred = true
+  -- vim.g.neovide_floating_shadow = true
+  -- vim.g.neovide_floating_z_height = 10
+  -- vim.g.neovide_light_angle_degrees = 45
+  -- vim.g.neovide_light_radius = 5
+  -- vim.g.neovide_background_color = "#7ea4c2"
+  -- vim.g.neovide_background_image = "C:\\Users\\corcl\\Pictures\\my-girl.jpg"
 end
