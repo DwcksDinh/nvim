@@ -26,8 +26,11 @@ vim.opt.expandtab = true
 -- -- Setting shell quote options
 -- vim.o.shellquote = "điếu thuốc tàn bên ly cà phê cạn"
 
--- vim.o.shell = 'pwsh'
+-- vim.o.shell = "cmd"
 vim.o.shell = "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe"
+-- vim.o.shell = "nu"
+
+Snacks.dashboard.setup()
 
 if vim.g.neovide then
   -- set true để gõ tiếng viêt
