@@ -28,7 +28,10 @@ vim.opt.expandtab = true
 
 -- vim.o.shell = "cmd"
 vim.o.shell = "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe"
--- vim.o.shell = "nu"
+vim.o.shellcmdflag = "-c"
+vim.o.shellquote = ""
+vim.o.shellxquote = ""
+-- vim.o.shell = "pwsh"
 
 Snacks.dashboard.setup()
 
