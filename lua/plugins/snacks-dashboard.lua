@@ -75,8 +75,8 @@ return {
         },
         {
           pane = 2,
-          { section = "header" },
-          { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
+          { section = "header", padding = 1 },
+          { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 0 },
           { section = "startup" },
         },
 
