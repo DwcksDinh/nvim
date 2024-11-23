@@ -4,9 +4,15 @@
 
 local map = vim.keymap.set
 
+-- Chế độ normal (Normal mode)
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<Tab>", "E", { noremap = true, silent = true })
 map("n", "<S-Tab>", "B", { noremap = true, silent = true })
+-- map("n", "<C-S-Left>", "vB", { noremap = true, silent = true })
+-- map("n", "<C-S-Right>", "vE", { noremap = true, silent = true })
+-- map("n", "<C-S-Up>", "v{k", { noremap = true, silent = true })
+-- map("n", "<C-S-Down>", "v}j", { noremap = true, silent = true })
+
 map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
 map("x", "<leader>p", [["_dP]])
 map("i", "jk", "<ESC>")
