@@ -97,8 +97,8 @@ return {
         })
       end,
       winopts = {
-        width = 0.8,
-        height = 0.8,
+        width = 0.95,
+        height = 0.95,
         row = 0.5,
         col = 0.5,
         preview = {
