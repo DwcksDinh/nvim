@@ -16,7 +16,7 @@ map("x", "<leader>P", [["_dP]])
 
 -- Xóa dòng nhưng không thay đổi register
 map("n", "<C-x>", [["_x]])
-map("n", "<C-X>", [["_dd]])
+map("n", "<S-X>", [["_dd]])
 map("v", "<C-x>", [["_x]])
 map("v", "<C-X>", [["_dd]])
 
