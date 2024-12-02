@@ -24,6 +24,7 @@ return {
     opts = {
       -- colorscheme = "kanagawa",
       -- colorscheme = "solarized-osaka",
+      -- colorscheme = "default",
       colorscheme = "nightfly",
     },
   },

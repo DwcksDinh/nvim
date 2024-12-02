@@ -5,6 +5,8 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 -- vim.api.nvim_set_option("clipboard", "unnamed")
 -- Check if 'pwsh' is executable and set the shell accordingly
 -- if vim.fn.executable("pwsh") == 1 then
@@ -32,7 +34,8 @@ vim.o.shellcmdflag = "-c"
 vim.o.shellquote = ""
 vim.o.shellxquote = ""
 -- vim.o.shell = "pwsh"
-
+require("neoscroll").setup({ mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>" } })
+require("smear_cursor").enabled = true
 Snacks.dashboard.setup()
 
 if vim.g.neovide then
