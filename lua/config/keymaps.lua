@@ -9,18 +9,22 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<Tab>", "E", { noremap = true, silent = true })
 map("n", "<S-Tab>", "B", { noremap = true, silent = true })
 
+-- Sql query
+map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
+
+-- Terminal
 map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
 
 -- paste nhưng không thay đổi register
 map("x", "<leader>P", [["_dP]])
 
 -- Xóa dòng nhưng không thay đổi register
-map("n", "<C-x>", [["_x]])
+map("n", "<C-x>", [["_x"]])
 map("n", "<S-X>", [["_dd]])
-map("v", "<C-x>", [["_x]])
-map("v", "<C-X>", [["_dd]])
+map("v", "<C-x>", [["_x"]])
+-- map("v", "<C-X>", [["_dd]])
 
-map("i", "jk", "<ESC>")
+map("i", "kj", "<ESC>")
 
 -- Chế độ chèn (Insert mode)
 map("i", "<C-h>", "<Left>", { noremap = true, silent = true })
