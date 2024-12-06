@@ -1,4 +1,4 @@
--- Keymaps are automatically loaded on the VeryLazy event
+-- Keset('n', '\\', 'zz')ymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
@@ -27,9 +27,15 @@ map("v", "<C-x>", [["_x"]])
 map("i", "kj", "<ESC>")
 
 -- Chế độ chèn (Insert mode)
-map("i", "<C-h>", "<Left>", { noremap = true, silent = true })
-map("i", "<C-l>", "<Right>", { noremap = true, silent = true })
+-- map("i", "<C-h>", "<Left>", { noremap = true, silent = true })
+-- map("i", "<C-j>", "<Right>", { noremap = true, silent = true })
 
 -- Chế độ lệnh (Command mode)
 map("c", "<C-h>", "<Left>", { noremap = true, silent = true })
 map("c", "<C-l>", "<Right>", { noremap = true, silent = true })
+
+-- Ctrl + A
+map("n", "<C-a>", "ggVG", { noremap = true, silent = true })
+
+-- zz
+map("n", "\\", "zz", { noremap = true, silent = true })

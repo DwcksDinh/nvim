@@ -4,10 +4,12 @@ return {
 
     opts = {
       -- Cursor color. Defaults to Cursor gui color
-      cursor_color = "#d3cdc3",
+      -- cursor_color = "#d3cdc3",
 
+      cursor_color = "#A3B76C",
       -- Background color. Defaults to Normal gui background color
-      normal_bg = "#282828",
+      -- normal_bg = "#282828",
+      normal_bg = "#859900",
 
       -- Smear cursor when switching buffers
       smear_between_buffers = true,
