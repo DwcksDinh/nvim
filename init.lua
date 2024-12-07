@@ -69,7 +69,7 @@ local modes = { "n", "v", "x" }
 for key, func in pairs(keymap) do
   vim.keymap.set(modes, key, func)
 end
-require("smear_cursor").enabled = true
+-- require("smear_cursor").enabled = true
 Snacks.dashboard.setup()
 
 if vim.g.neovide then
@@ -92,7 +92,7 @@ if vim.g.neovide then
 
   vim.g.neovide_scroll_animation_length = 0
 
-  vim.g.neovide_transparency = 0.4
+  -- vim.g.neovide_transparency = 0.4
 
   vim.g.neovide_padding_top = 0
   vim.g.neovide_padding_left = 0

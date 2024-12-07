@@ -23,9 +23,9 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "kanagawa",
-      -- colorscheme = "solarized-osaka",
+      colorscheme = "hybrid",
       -- colorscheme = "default",
-      colorscheme = "nightfly",
+      -- colorscheme = "nightfly",
     },
   },
 }
