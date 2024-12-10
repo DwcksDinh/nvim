@@ -19,10 +19,13 @@ map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
 map("x", "<leader>P", [["_dP]])
 
 -- Xóa dòng nhưng không thay đổi register
-map("n", "<C-x>", [["_x"]])
+map("n", "<A-x>", [["_x"]])
 map("n", "<S-X>", [["_dd]])
-map("v", "<C-x>", [["_x"]])
+map("v", "<A-x>", [["_x"]])
 -- map("v", "<C-X>", [["_dd]])
+
+-- Duplicate a line and comment out the first line
+map("n", "yc", "yygccp", { noremap = true })
 
 map("i", "kj", "<ESC>")
 
