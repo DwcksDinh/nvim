@@ -19,13 +19,27 @@ return {
       vim.g.nightflyTransparent = true
     end,
   },
+  { "aliqyan-21/darkvoid.nvim" },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      styles = {
+        bold = true,
+        italic = true,
+        transparency = true,
+      },
+    },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "kanagawa",
-      colorscheme = "hybrid",
+      -- colorscheme = "hybrid",
       -- colorscheme = "default",
       -- colorscheme = "nightfly",
+      -- colorscheme = "darkvoid",
+      colorscheme = "rose-pine",
     },
   },
 }
