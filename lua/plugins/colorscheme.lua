@@ -19,7 +19,22 @@ return {
       vim.g.nightflyTransparent = true
     end,
   },
-  { "aliqyan-21/darkvoid.nvim" },
+  {
+    "aliqyan-21/darkvoid.nvim",
+    priority = 1000,
+    config = function()
+      require("darkvoid").setup({
+        transparent = true,
+        glow = true,
+        colors = {
+          plugins = {
+            lualine = false, -- make this to false
+          },
+        },
+      })
+      vim.cmd.colorscheme("darkvoid")
+    end,
+  },
   {
     "rose-pine/neovim",
     name = "rose-pine",
@@ -50,9 +65,9 @@ return {
       -- colorscheme = "hybrid",
       -- colorscheme = "default",
       -- colorscheme = "nightfly",
-      -- colorscheme = "darkvoid",
+      colorscheme = "darkvoid",
       -- colorscheme = "tokyonight",
-      colorscheme = "rose-pine-moon",
+      -- colorscheme = "rose-pine-moon",
     },
   },
 }
