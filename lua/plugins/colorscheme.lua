@@ -61,11 +61,11 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "kanagawa",
+      colorscheme = "kanagawa",
       -- colorscheme = "hybrid",
       -- colorscheme = "default",
       -- colorscheme = "nightfly",
-      colorscheme = "darkvoid",
+      -- colorscheme = "darkvoid",
       -- colorscheme = "tokyonight",
       -- colorscheme = "rose-pine-moon",
     },
