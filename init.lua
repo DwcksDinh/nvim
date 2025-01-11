@@ -8,7 +8,8 @@ vim.opt.expandtab = true
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 -- remove line number margin
-vim.o.signcolumn = "no"
+vim.o.signcolumn = "yes:1" -- set it no if you don't want to show sign column
+vim.cmd("hi LineNr guibg=NONE")
 
 -- vim.o.shell = "cmd"
 vim.o.shell = "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe"
