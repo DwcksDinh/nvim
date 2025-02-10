@@ -24,7 +24,14 @@ map("n", "c", [["_c]])
 map("n", "<A-x>", [["_x]])
 map("n", "<S-X>", [["_dd]])
 map("v", "<A-x>", [["_x]])
--- map("v", "<C-X>", [["_dd]])
+
+-- git keymaps
+map("n", "<leader>gl", function()
+  require("snacks").lazygit.log()
+end, { desc = "Lazygit Logs" })
+map("n", "<leader>gbr", function()
+  require("snacks").picker.git_branches({ layout = "select" })
+end, { desc = "Pick and Switch Git Branches" })
 
 -- Duplicate a line and comment out the first line
 map("n", "yc", "yygccp", { noremap = true })
