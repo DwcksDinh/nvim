@@ -8,6 +8,8 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<Tab>", "E", { noremap = true, silent = true })
 map("n", "<S-Tab>", "B", { noremap = true, silent = true })
+map("n", "j", "jzz", { noremap = true, silent = true })
+map("n", "k", "kzz", { noremap = true, silent = true })
 
 -- Sql query
 map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
@@ -21,9 +23,9 @@ map("x", "<leader>P", [["_dP]])
 -- Xóa dòng nhưng không thay đổi register
 map("v", "c", [["_c]])
 map("n", "c", [["_c]])
-map("n", "<A-x>", [["_x]])
+map("n", "x", [["_x]])
 map("n", "<S-X>", [["_dd]])
-map("v", "<A-x>", [["_x]])
+map("v", "x", [["_x]])
 
 -- git keymaps
 map("n", "<leader>gl", function()

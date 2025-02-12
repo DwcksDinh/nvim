@@ -71,14 +71,31 @@ return {
     },
   },
   {
+    "tiagovla/tokyodark.nvim",
+    opts = {
+      transparent_background = true,
+    },
+  },
+  { "savq/melange-nvim" },
+  {
+    "rjshkhr/shadow.nvim",
+    priority = 1000,
+    config = function()
+      vim.opt.termguicolors = true
+      vim.cmd.colorscheme("shadow")
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      -- colorscheme = "kanagawa",
       -- colorscheme = "hybrid",
-      -- colorscheme = "default",
+      colorscheme = "tokyonight-storm",
+      -- colorscheme = "tokyodark",
+      -- colorscheme = "shadow",
       -- colorscheme = "nightfly",
       -- colorscheme = "darkvoid",
-      -- colorscheme = "tokyonight",
+      -- colorscheme = "melange",
       -- colorscheme = "rose-pine-moon",
     },
   },
