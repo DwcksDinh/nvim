@@ -80,17 +80,18 @@ return {
   {
     "rjshkhr/shadow.nvim",
     priority = 1000,
-    config = function()
-      vim.opt.termguicolors = true
-      vim.cmd.colorscheme("shadow")
-    end,
   },
+  { "navarasu/onedark.nvim", opts = {
+    transparent = true,
+  } },
   {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "kanagawa",
       -- colorscheme = "hybrid",
-      colorscheme = "tokyonight-storm",
+      -- colorscheme = "tokyonight-storm",
+      colorscheme = "onedark",
+      -- colorscheme = "shadow",
       -- colorscheme = "tokyodark",
       -- colorscheme = "shadow",
       -- colorscheme = "nightfly",
