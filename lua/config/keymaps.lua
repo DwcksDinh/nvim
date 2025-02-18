@@ -14,6 +14,9 @@ map("n", "<S-Tab>", "B", { noremap = true, silent = true })
 -- Sql query
 map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
 
+-- Oil
+map("n", "<leader>o", "<CMD>Oil<CR>", { noremap = true, silent = true, desc = "Open parent directory" })
+
 -- Terminal
 map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
 
