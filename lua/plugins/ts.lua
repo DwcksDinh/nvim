@@ -1,6 +1,16 @@
 local map = vim.keymap.set
 
 return {
+  -- {
+  --   "davidosomething/format-ts-errors.nvim",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     require("format-ts-errors").setup({
+  --       add_markdown = true,
+  --       start_indent_level = 0,
+  --     })
+  --   end,
+  -- },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
@@ -96,6 +106,18 @@ return {
           enabled = false,
         },
         vtsls = {
+          enabled = false,
+        },
+        lua_ls = {
+          enabled = false,
+        },
+        -- stylua = {
+        --     enabled = false,
+        -- },
+        shfmt = {
+          enabled = false,
+        },
+        shellcheck = {
           enabled = false,
         },
       },
