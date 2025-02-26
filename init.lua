@@ -23,13 +23,13 @@ if vim.g.neovide then
   vim.g.neovide_refresh_rate = 120
   vim.g.neovide_cursor_animation_length = 0.04
   vim.g.neovide_cursor_trail_size = 0.7
-  vim.g.neovide_cursor_vfx_mode = "railgun"
+  vim.g.neovide_cursor_vfx_mode = "sonicboom"
 
   vim.g.neovide_scroll_animation_length = 0
 
-  vim.g.neovide_transparency = 0.8
+  vim.g.neovide_transparency = 1
 
-  vim.g.neovide_padding_top = 0
+  vim.g.neovide_padding_top = 12
   vim.g.neovide_padding_left = 0
   vim.g.neovide_padding_right = 0
   vim.g.neovide_padding_bottom = 0
