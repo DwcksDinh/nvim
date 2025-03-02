@@ -18,8 +18,6 @@ vim.o.shellcmdflag = "-c"
 vim.o.shellquote = ""
 vim.o.shellxquote = ""
 
-require("neo-img").setup()
-
 if vim.g.neovide then
   vim.g.neovide_input_ime = true
   vim.g.neovide_refresh_rate = 120

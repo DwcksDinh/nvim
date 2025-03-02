@@ -111,6 +111,9 @@ return {
         lua_ls = {
           enabled = false,
         },
+        php_cs_fixer = {
+          enabled = false,
+        },
         -- stylua = {
         --     enabled = false,
         -- },
