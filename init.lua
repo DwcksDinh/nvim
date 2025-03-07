@@ -5,6 +5,11 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+-- ẩn kí tự ^M
+vim.opt.binary = false
+vim.opt.eol = false
+vim.opt.fileformats = "dos,unix,mac"
+vim.cmd([[autocmd BufRead * silent! %s/\r//g]])
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 -- remove line number margin
