@@ -9,12 +9,10 @@ vim.opt.expandtab = true
 vim.opt.binary = false
 vim.opt.eol = false
 vim.opt.fileformats = "dos,unix,mac"
-vim.cmd([[autocmd BufRead * silent! %s/\r//g]])
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 -- remove line number margin
 vim.o.signcolumn = "yes:1" -- set it no if you don't want to show sign column
-vim.cmd("hi LineNr guibg=NONE")
 -- show error striethrough instead of curly underline (my wezterm doesnt support it)
 vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { strikethrough = true, sp = "Red" })
 
