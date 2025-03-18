@@ -1,12 +1,18 @@
 return {
-  -- {
-  --   "rebelot/kanagawa.nvim",
-  --   branch = "master",
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = true,
-  --   },
-  -- },
+  {
+    "rebelot/kanagawa.nvim",
+    branch = "master",
+    priority = 1000,
+    opts = {
+      -- transparent = true,
+    },
+  },
+  {
+    "thesimonho/kanagawa-paper.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   -- {
   --   "HoNamDuong/hybrid.nvim",
   --   lazy = false,
@@ -95,7 +101,7 @@ return {
     version = "*",
     opts = {
       -- kabuki or afterlife
-      style = "afterlife", -- The theme comes in two styles: kabuki or afterlife
+      style = "kabuki", -- The theme comes in two styles: kabuki or afterlife
       terminal_colors = true, -- Use colors used when opening a `:terminal`
       invert_colors = {
         -- Invert colors for the following syntax groups
@@ -129,11 +135,12 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "kanagawa",
+      colorscheme = "kanagawa-wave",
+      -- colorscheme = "kanagawa-paper",
       -- colorscheme = "hybrid",
       -- colorscheme = "tokyonight-storm",
       -- colorscheme = "onedark",
-      -- colorscheme = "onedark",
-      colorscheme = "nightcity",
+      -- colorscheme = "nightcity",
       -- colorscheme = "shadow",
       -- colorscheme = "tokyodark",
       -- colorscheme = "shadow",
