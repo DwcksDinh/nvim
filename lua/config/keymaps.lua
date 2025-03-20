@@ -12,7 +12,7 @@ map("n", "<S-Tab>", "B", { noremap = true, silent = true })
 -- map("n", "k", "kzz", { noremap = true, silent = true })
 
 -- Sql query
-map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
+-- map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
 
 -- Oil
 map("n", "<leader>o", "<CMD>Oil<CR>", { noremap = true, silent = true, desc = "Open parent directory" })
@@ -42,14 +42,7 @@ map("n", "<leader>gbr", function()
   require("snacks").picker.git_branches({ layout = "select" })
 end, { desc = "Pick and Switch Git Branches" })
 
--- Duplicate a line and comment out the first line
-map("n", "yc", "yygccp", { noremap = true })
-
 map("i", "kj", "<ESC>")
-
--- Chế độ chèn (Insert mode)
--- map("i", "<C-h>", "<Left>", { noremap = true, silent = true })
--- map("i", "<C-j>", "<Right>", { noremap = true, silent = true })
 
 -- Chế độ lệnh (Command mode)
 map("c", "<C-h>", "<Left>", { noremap = true, silent = true })
