@@ -120,6 +120,9 @@ return {
         shfmt = {
           enabled = false,
         },
+        ocamllsp = {
+          enabled = false,
+        },
         shellcheck = {
           enabled = false,
         },

@@ -9,10 +9,15 @@ autocmd({ "BufNewFile", "BufRead" }, {
   command = [[set filetype=fsharp]],
 })
 
-require("ionide").setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
+autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.html",
+  command = [[set filetype=html]],
 })
+
+-- require("ionide").setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- })
 
 require("neo-img").setup()
 
