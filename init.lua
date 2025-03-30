@@ -15,9 +15,6 @@ vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.o.signcolumn = "yes:1" -- set it no if you don't want to show sign column
 -- show error striethrough instead of curly underline (my wezterm doesnt support it)
 vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { underline = true, sp = "Red" })
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-  border = "rounded",
-})
 
 vim.o.shell = "nu.exe"
 vim.o.shellcmdflag = "-c"

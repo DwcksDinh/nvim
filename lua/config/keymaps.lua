@@ -8,8 +8,6 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<Tab>", "E", { noremap = true, silent = true })
 map("n", "<S-Tab>", "B", { noremap = true, silent = true })
--- map("n", "j", "jzz", { noremap = true, silent = true })
--- map("n", "k", "kzz", { noremap = true, silent = true })
 
 -- Sql query
 -- map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
