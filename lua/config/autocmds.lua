@@ -9,10 +9,10 @@ autocmd({ "BufNewFile", "BufRead" }, {
   command = [[set filetype=fsharp]],
 })
 
-autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.html",
-  command = [[set filetype=html]],
-})
+-- autocmd({ "BufNewFile", "BufRead" }, {
+--   pattern = "*.html",
+--   command = [[set filetype=html]],
+-- })
 
 -- require("ionide").setup({
 --   on_attach = on_attach,

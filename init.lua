@@ -30,7 +30,7 @@ if vim.g.neovide then
 
   vim.g.neovide_scroll_animation_length = 0
 
-  vim.g.neovide_transparency = 1
+  vim.g.neovide_opacity = 1
 
   vim.g.neovide_padding_top = 12
   vim.g.neovide_padding_left = 0

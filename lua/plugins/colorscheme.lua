@@ -67,8 +67,8 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "kanagawa-lotus",
-      colorscheme = "onedark_vivid",
-      colorscheme = "catppuccin-macchiato",
+      colorscheme = "onedark",
+      -- colorscheme = "catppuccin-macchiato",
       -- colorscheme = "kanagawa-paper-canvas",
       -- colorscheme = "NeoSolarized",
       -- colorscheme = "dawnfox",
