@@ -47,7 +47,7 @@ map("c", "<C-h>", "<Left>", { noremap = true, silent = true })
 map("c", "<C-l>", "<Right>", { noremap = true, silent = true })
 
 -- Ctrl + A
-map("n", "<C-a>", "ggVG", { noremap = true, silent = true })
+-- map("n", "<C-s>", "<CMD>w<CR>=ap", { noremap = true, silent = true })
 
 -- zz
 map("n", "\\", "zz", { noremap = true, silent = true })
