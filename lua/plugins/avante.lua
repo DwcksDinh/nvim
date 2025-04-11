@@ -1,3 +1,7 @@
+-- Had the same problem on macos. Following these steps solved the issue for me:
+-- Made sure avante builds from source using thebuild = "make BUILD_FROM_SOURCE=true" option.
+-- Removed the avante.nvim directory under ~/.local/share/nvim/lazy/avante.nvim and re-installing solved the issue.
+-- Re-installed and now it works.
 return {
   {
     "yetone/avante.nvim",
@@ -32,8 +36,8 @@ return {
       },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
-    -- build = "make",
-    build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false", -- for windows
+    build = "make BUILD_FROM_SOURCE=true",
+    -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false", -- for windows
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
       "stevearc/dressing.nvim",

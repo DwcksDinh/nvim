@@ -19,7 +19,7 @@ autocmd({ "BufNewFile", "BufRead" }, {
 --   capabilities = capabilities,
 -- })
 
-require("neo-img").setup()
+-- require("neo-img").setup()
 
 vim.cmd("hi LineNr guibg=NONE")
 vim.cmd([[autocmd BufRead * silent! %s/\r//g]])
