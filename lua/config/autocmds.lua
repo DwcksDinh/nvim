@@ -4,10 +4,10 @@
 local autocmd = vim.api.nvim_create_autocmd
 
 -- dont list quickfix buffers
-autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.fs,*.fsx,*.fsi",
-  command = [[set filetype=fsharp]],
-})
+-- autocmd({ "BufNewFile", "BufRead" }, {
+--   pattern = "*.fs,*.fsx,*.fsi",
+--   command = [[set filetype=fsharp]],
+-- })
 
 -- autocmd({ "BufNewFile", "BufRead" }, {
 --   pattern = "*.html",
