@@ -16,7 +16,10 @@ map("n", "<S-Tab>", "B", { noremap = true, silent = true })
 -- map("n", "<leader>o", "<CMD>Oil<CR>", { noremap = true, silent = true, desc = "Open parent directory" })
 
 --bring ctrl i back
-map("n", "<C-i>", "<C-i>", { noremap = true, silent = true })
+-- map("n", "<C-i>", "<C-i>", { noremap = true, silent = true })
+
+-- add keymap to remove trailing whitespace
+map("n", "<C-r>", ":%s/\\r//g<CR>", { noremap = true, silent = true })
 
 -- Terminal
 map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
