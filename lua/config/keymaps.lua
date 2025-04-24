@@ -16,7 +16,7 @@ map("n", "<S-Tab>", "B", { noremap = true, silent = true })
 -- map("n", "<leader>o", "<CMD>Oil<CR>", { noremap = true, silent = true, desc = "Open parent directory" })
 
 --bring ctrl i back
--- map("n", "<C-i>", "<C-i>", { noremap = true, silent = true })
+map("n", "<Tab>", "<C-i>", { noremap = true, silent = true })
 
 -- add keymap to remove trailing whitespace
 map("n", "<C-\\>", ":%s/\\r//g<CR>", { noremap = true, silent = true })

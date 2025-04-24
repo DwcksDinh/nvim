@@ -5,22 +5,29 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
--- ẩn kí tự ^M
+
+-- Hide ^M characters (fix for mixed fileformats)
 vim.opt.binary = false
-vim.opt.eol = false
-vim.opt.fileformats = "dos,unix,mac"
+vim.opt.eol = true -- Ensure end-of-line is consistent
+vim.opt.fileformats = "unix,dos,mac" -- Prioritize Unix format
+
+-- Folding settings
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
--- remove line number margin
-vim.o.signcolumn = "yes:1" -- set it no if you don't want to show sign column
--- show error striethrough instead of curly underline (my wezterm doesnt support it)
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { underline = true, sp = "Red" })
 
+-- Sign column settings
+vim.o.signcolumn = "yes" -- Always show sign column to avoid shifting
+
+-- Diagnostic underline settings
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { undercurl = true, sp = "Red" })
+
+-- Shell settings
 vim.o.shell = "fish"
 vim.o.shellcmdflag = "-c"
 vim.o.shellquote = ""
 vim.o.shellxquote = ""
 
+-- Neovide-specific settings
 if vim.g.neovide then
   vim.g.neovide_input_ime = true
   vim.g.neovide_refresh_rate = 120

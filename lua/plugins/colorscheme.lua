@@ -45,11 +45,20 @@ return {
       end,
     },
   },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+  },
   -- {
   --   "cryptomilk/nightcity.nvim",
   --   version = "*",
   --   opts = {
-  --     style = "kabuki", -- kabuki or afterlife
+  --     style = "afterlife", -- kabuki or afterlife
+  --     transparent = true,
   --   },
   -- },
   -- { "aliqyan-21/darkvoid.nvim" },
@@ -67,7 +76,8 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "kanagawa-lotus",
-      colorscheme = "onedark",
+      -- colorscheme = "onedark",
+      colorscheme = "tokyonight-storm",
       -- colorscheme = "catppuccin-macchiato",
       -- colorscheme = "kanagawa-paper-canvas",
       -- colorscheme = "NeoSolarized",
