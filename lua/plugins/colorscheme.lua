@@ -77,7 +77,7 @@ return {
     opts = {
       -- colorscheme = "kanagawa-lotus",
       -- colorscheme = "onedark",
-      colorscheme = "tokyonight-storm",
+      colorscheme = "tokyonight",
       -- colorscheme = "catppuccin-macchiato",
       -- colorscheme = "kanagawa-paper-canvas",
       -- colorscheme = "NeoSolarized",
