@@ -21,3 +21,6 @@ deploy:
 
 team:
 - an chia phai deu giua cac thanh vien
+
+usecase:
+- phai la dong tu + danh tu
