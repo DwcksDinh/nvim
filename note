@@ -2,6 +2,11 @@ https://schneidenbach.github.io/intro-to-csharp-and-dotnet-from-beginner-to-prof
 epic react: 34
 
 
-
-asm: trạng thái đơn hàng + trạng thái thanh toán
-
+du an tot nghiep:
+- the vip cho khach hang, level cua nguoi mua (vi du level vip nhat dc discount 10% cho tat ca san pham)
+- rate limit comment, bo loc comment bad word update status thanh k hoat dong neu cmt bay 3 lan
+- doanh thu theo tuan, theo thang, theo quy
+- mua hang giao hang thanh cong r moi dc review, chi duoc review trong tuan
+- voucher chia theo role, chi co role do moi dc su dung, dc su dung 1 lan, chi cho 1 so luong nguoi su dung 
+- voucher co the giam theo phan tram hoac la so tien toi da
+- doi tra hang refund tien (paypal)
