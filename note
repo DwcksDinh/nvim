@@ -15,3 +15,6 @@ du an tot nghiep:
 kiem thu:
 - manual test, co bao nhieu test case, kiem thu bao nhieu lan
 - phai co file excel
+
+deploy:
+- chup man hinh tung buoc lam
