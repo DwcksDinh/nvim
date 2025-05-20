@@ -13,6 +13,7 @@ return {
       copilot = {
         model = "claude-3.5-sonnet",
       },
+
       -- provider = "deepseek",
       -- vendors = {
       --   deepseek = {
@@ -32,16 +33,35 @@ return {
       --   max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
       --   -- reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
       -- },
-      system_prompt = function()
-        local hub = require("mcphub").get_hub_instance()
-        return hub:get_active_servers_prompt()
-      end,
-      -- The custom_tools type supports both a list and a function that returns a list. Using a function here prevents requiring mcphub before it's loaded
-      custom_tools = function()
-        return {
-          require("mcphub.extensions.avante").mcp_tool(),
-        }
-      end,
+
+      -- system_prompt = function()
+      --   local hub = require("mcphub").get_hub_instance()
+      --   return hub:get_active_servers_prompt()
+      -- end,
+      -- -- The custom_tools type supports both a list and a function that returns a list. Using a function here prevents requiring mcphub before it's loaded
+      -- custom_tools = function()
+      --   return {
+      --     require("mcphub.extensions.avante").mcp_tool(),
+      --   }
+      -- end,
+
+      web_search_engine = {
+        provider = "tavily",
+        api_key = os.getenv("TAVILY_API_KEY"),
+
+        -- Additional settings:
+        max_results = 5, -- Number of search results to retrieve (default: 5)
+        include_answer = true, -- Include Tavily's summarized answer (default: true)
+        include_images = false, -- Include images in search results (default: false)
+        search_depth = "advanced", -- "basic" or "advanced" search depth (default: "basic")
+        include_domains = {}, -- Array of domains to prioritize in search results
+        exclude_domains = {}, -- Array of domains to exclude from search results
+        timeout = 15000, -- Timeout in milliseconds (default: 15000)
+        -- For specialized searches:
+        search_type = "search", -- Can be "search" or "passage" (default: "search")
+        search_bm25 = false, -- Enable BM25 vector search (default: false)
+      },
+
       file_selector = {
         provider = "snacks",
         -- Options override for custom providers
