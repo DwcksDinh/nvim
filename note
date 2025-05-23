@@ -27,3 +27,15 @@ usecase:
 
 todo:
 - usecase tong quat
+
+
+login:
+    token chi dc dung 1 lan (khi doi mat khau xong khong duoc dung lai link cu)
+    phai gioi han thoi gian doi mat khau chi trong 60p
+    luc dang ki phai co xac thuc bang email
+
+register:
+    phai co xac thuc bang email
+
+usecase it qua phai ve them
+luu do thuat toan phai co 2 truong hop la co va khong co

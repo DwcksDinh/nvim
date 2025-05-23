@@ -12,6 +12,10 @@ map("n", "<S-Tab>", "B", { noremap = true, silent = true })
 -- Sql query
 -- map("n", "<leader>r", ":'<,'>DB", { noremap = true, silent = true })
 
+-- diagnostics list
+map("n", "D", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
+-- map("n", "<leader>D", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
+
 -- Oil
 map("n", "<leader>o", "<CMD>Oil<CR>", { noremap = true, silent = true, desc = "Open parent directory" })
 

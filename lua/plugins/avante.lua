@@ -9,10 +9,10 @@ return {
     lazy = false,
     version = false, -- set this if you want to always pull the latest change
     opts = {
-      provider = "copilot",
-      copilot = {
-        model = "claude-3.5-sonnet",
-      },
+      -- provider = "copilot",
+      -- copilot = {
+      --   model = "claude-3.5-sonnet",
+      -- },
 
       -- provider = "deepseek",
       -- vendors = {
@@ -25,14 +25,14 @@ return {
       --   },
       -- },
 
-      -- provider = "gemini",
-      -- gemini = {
-      --   model = "gemini-2.0-flash", -- your desired model (or use gpt-4o, etc.)
-      --   timeout = 30000, -- Timeout in milliseconds, increase this for reasoning models
-      --   temperature = 0,
-      --   max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
-      --   -- reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
-      -- },
+      provider = "gemini",
+      gemini = {
+        model = "gemini-2.0-flash", -- your desired model (or use gpt-4o, etc.)
+        timeout = 30000, -- Timeout in milliseconds, increase this for reasoning models
+        temperature = 0,
+        max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
+        -- reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
+      },
 
       -- system_prompt = function()
       --   local hub = require("mcphub").get_hub_instance()
