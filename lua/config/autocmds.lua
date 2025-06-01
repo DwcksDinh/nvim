@@ -4,20 +4,20 @@
 local autocmd = vim.api.nvim_create_autocmd
 
 -- dont list quickfix buffers
--- autocmd({ "BufNewFile", "BufRead" }, {
---   pattern = "*.fs,*.fsx,*.fsi",
---   command = [[set filetype=fsharp]],
--- })
+autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "*.fs,*.fsx,*.fsi",
+  command = [[set filetype=fsharp]],
+})
 
 -- autocmd({ "BufNewFile", "BufRead" }, {
 --   pattern = "*.html",
 --   command = [[set filetype=html]],
 -- })
 
--- require("ionide").setup({
---   on_attach = on_attach,
---   capabilities = capabilities,
--- })
+require("ionide").setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
 
 -- require("neo-img").setup()
 
