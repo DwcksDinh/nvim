@@ -14,10 +14,9 @@ autocmd({ "BufNewFile", "BufRead" }, {
 --   command = [[set filetype=html]],
 -- })
 
-require("ionide").setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-})
+require("ionide").setup({})
+
+-- require("lspconfig").fsautocomplete.setup({})
 
 -- require("neo-img").setup()
 
