@@ -16,8 +16,6 @@ autocmd({ "BufNewFile", "BufRead" }, {
 
 require("ionide").setup({})
 
--- require("lspconfig").fsautocomplete.setup({})
-
 -- require("neo-img").setup()
 
 vim.cmd("hi LineNr guibg=NONE")
