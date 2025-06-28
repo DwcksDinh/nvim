@@ -16,17 +16,6 @@ return {
         },
       },
 
-      -- provider = "deepseek",
-      -- vendors = {
-      --   deepseek = {
-      --     __inherited_from = "openai",
-      --     api_key_name = "DEEPSEEK_API_KEY",
-      --     endpoint = "https://api.deepseek.com",
-      --     model = "deepseek-coder",
-      --     max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
-      --   },
-      -- },
-
       -- provider = "gemini",
       -- gemini = {
       --   model = "gemini-2.0-flash", -- your desired model (or use gpt-4o, etc.)

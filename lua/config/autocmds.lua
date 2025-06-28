@@ -14,7 +14,7 @@ autocmd({ "BufNewFile", "BufRead" }, {
 --   command = [[set filetype=html]],
 -- })
 
-require("ionide").setup({})
+-- require("ionide").setup({})
 
 -- require("neo-img").setup()
 
