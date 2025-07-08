@@ -18,5 +18,12 @@ autocmd({ "BufNewFile", "BufRead" }, {
 
 -- require("neo-img").setup()
 
+-- require("actually-doom").setup({
+--   game = {
+--     kitty_graphics = true,
+--     tmux_passthrough = true,
+--   },
+-- })
+
 vim.cmd("hi LineNr guibg=NONE")
 vim.cmd([[autocmd BufRead * silent! %s/\r//g]])

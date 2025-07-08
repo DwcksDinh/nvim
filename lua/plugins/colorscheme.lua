@@ -17,9 +17,16 @@ return {
     },
   },
   {
+    "AlexvZyl/nordic.nvim",
+  },
+  {
+    "glepnir/zephyr-nvim",
+    requires = { "nvim-treesitter/nvim-treesitter", opt = true },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-night",
+      colorscheme = "zephyr",
     },
   },
 }
