@@ -93,6 +93,7 @@ return {
               return vim.bo.modified and { fg = "#fab387" } or { fg = "#cdd6f4" }
             end,
           },
+          { "filetype", icon_only = true, separator = " " },
         },
         lualine_x = {
           {
@@ -119,7 +120,7 @@ return {
           --   end,
           -- },
         },
-        lualine_y = {},
+        lualine_y = { { "progress", icon = "📏" } },
         lualine_z = { { "location", icon = "📍" } },
       },
       inactive_sections = {
