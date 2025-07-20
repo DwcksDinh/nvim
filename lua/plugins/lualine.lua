@@ -57,6 +57,7 @@ return {
                 [""] = { name = "V-BLOCK", icon = "" },
                 c = { name = "COMMAND", icon = "" },
                 R = { name = "REPLACE", icon = "" },
+                t = { name = "TERMINAL", icon = "" },
               }
               local info = mode_info[mode] or { name = mode, icon = "" }
               return info.icon .. " " .. info.name
