@@ -39,3 +39,7 @@ register:
 
 usecase it qua phai ve them
 luu do thuat toan phai co 2 truong hop la co va khong co
+
+
+
+sửa FE logic của register khi đăng kí k đc phải trả về lỗi
