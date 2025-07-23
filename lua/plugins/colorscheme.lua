@@ -24,10 +24,19 @@ return {
     requires = { "nvim-treesitter/nvim-treesitter", opt = true },
   },
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1001,
+    opts = {
+      transparent_background = true,
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "zephyr",
-      colorscheme = "tokyonight",
+      -- colorscheme = "tokyonight",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
