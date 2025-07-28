@@ -27,6 +27,7 @@ map("n", "<C-\\>", ":%s/\\r//g<CR>", { noremap = true, silent = true })
 
 -- Terminal
 map("t", "<ESC><ESC>", "<C-\\><C-n>", { noremap = true })
+-- map("t", "<C-/>", "<CMD>Floaterminal<CR>", { noremap = true })
 
 -- paste nhưng không thay đổi register
 map("x", "<leader>P", [["_dP]])
